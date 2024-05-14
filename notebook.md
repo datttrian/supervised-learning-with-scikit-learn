@@ -1,19 +1,8 @@
-# Binary classification
+# Supervised Learning with scikit-learn
 
-There are two types of supervised learning — classification and
-regression. Binary classification is used to predict a target variable
-that has only two labels, typically represented numerically with a zero
-or a one.
+## Classification
 
-A dataset, `churn_df`, is available to you by typing `churn_df` in the
-shell.
-
-Your task is to examine the data and choose which column could be the
-target variable for binary classification.
-
-**InstructionsAnswer**
-
-# k-Nearest Neighbors: Fit
+### k-Nearest Neighbors: Fit
 
 In this exercise, you will build your first classification model using
 the `churn_df` dataset, which has been preloaded for the remainder of
@@ -31,7 +20,11 @@ converted into `numpy` arrays.
 
 **Answer**
 
-# k-Nearest Neighbors: Predict
+```{python}
+
+```
+
+### k-Nearest Neighbors: Predict
 
 Now you have fit a KNN classifier, you can use it to predict the label
 of new data points. All available data was used for training, however,
@@ -54,7 +47,11 @@ predict the labels of a set of new data points:
 
 **Answer**
 
-# Train/test split + computing accuracy
+```{python}
+
+```
+
+### Train/test split + computing accuracy
 
 It's time to practice splitting your data into training and test sets
 with the `churn_df` dataset!
@@ -73,7 +70,11 @@ and the target variable as `y`.
 
 **Answer**
 
-# Overfitting and underfitting
+```{python}
+
+```
+
+### Overfitting and underfitting
 
 Interpreting model complexity is a great way to evaluate supervised
 learning performance. Your aim is to produce a model that can interpret
@@ -100,7 +101,11 @@ In addition, `KNeighborsClassifier` has been imported for you along with
 
 **Answer**
 
-# Visualizing model complexity
+```{python}
+
+```
+
+### Visualizing model complexity
 
 Now you have calculated the accuracy of the KNN model on the training
 and test sets using various values of `n_neighbors`, you can create a
@@ -124,7 +129,13 @@ of neighbors for your model.
 
 **Answer**
 
-# Creating features
+```{python}
+
+```
+
+## Regression
+
+### Creating features
 
 In this chapter, you will work with a dataset called `sales_df`, which
 contains information on advertising campaign expenditure across
@@ -152,7 +163,11 @@ arrays, reshaping them to the correct format for scikit-learn.
 
 **Answer**
 
-# Building a linear regression model
+```{python}
+
+```
+
+### Building a linear regression model
 
 Now you have created your feature and target arrays, you will train a
 linear regression model on all feature and target values.
@@ -173,7 +188,11 @@ values there is no need to split the data into training and test sets.
 
 **Answer**
 
-# Visualizing a linear regression model
+```{python}
+
+```
+
+### Visualizing a linear regression model
 
 Now you have built your linear regression model and trained it using all
 available observations, you can visualize how well the model fits the
@@ -195,7 +214,11 @@ exercise.
 
 **Answer**
 
-# Fit and predict for regression
+```{python}
+
+```
+
+### Fit and predict for regression
 
 Now you have seen how linear regression works, your task is to create a
 multiple linear regression model using all of the features in the
@@ -223,7 +246,11 @@ from their respective modules.
 
 **Answer**
 
-# Regression performance
+```{python}
+
+```
+
+### Regression performance
 
 Now you have fit a model, `reg`, using all features from `sales_df`, and
 made predictions of sales values, you can evaluate performance using
@@ -248,7 +275,11 @@ predictions on unseen data.
 
 **Answer**
 
-# Cross-validation for R-squared
+```{python}
+
+```
+
+### Cross-validation for R-squared
 
 Cross-validation is a vital approach to evaluating a model. It maximizes
 the amount of data that is available to the model, as the model is not
@@ -274,7 +305,11 @@ been imported from `sklearn.linear_model`.
 
 **Answer**
 
-# Analyzing cross-validation metrics
+```{python}
+
+```
+
+### Analyzing cross-validation metrics
 
 Now you have performed cross-validation, it's time to analyze the
 results.
@@ -294,7 +329,11 @@ previous exercise.
 
 **Answer**
 
-# Regularized regression: Ridge
+```{python}
+
+```
+
+### Regularized regression: Ridge
 
 Ridge regression performs regularization by computing the *squared*
 values of the model parameters multiplied by alpha and adding them to
@@ -317,7 +356,11 @@ different alpha values, which you will loop through to generate scores.
 
 **Answer**
 
-# Lasso regression for feature importance
+```{python}
+
+```
+
+### Lasso regression for feature importance
 
 In the video, you saw how lasso regression can be used to identify
 important features in a dataset.
@@ -338,7 +381,13 @@ names.
 
 **Answer**
 
-# Assessing a diabetes prediction classifier
+```{python}
+
+```
+
+## Fine-Tuning Your Model
+
+### Assessing a diabetes prediction classifier
 
 In this chapter you'll work with the `diabetes_df` dataset introduced
 previously.
@@ -366,7 +415,11 @@ confusion matrix and classification report.
 
 **Answer**
 
-# Building a logistic regression model
+```{python}
+
+```
+
+### Building a logistic regression model
 
 In this exercise, you will build a logistic regression model using all
 features in the `diabetes_df` dataset. The model will be used to predict
@@ -387,7 +440,11 @@ The `diabetes_df` dataset has been split into `X_train`, `X_test`,
 
 **Answer**
 
-# The ROC curve
+```{python}
+
+```
+
+### The ROC curve
 
 Now you have built a logistic regression model for predicting diabetes
 status, you can plot the ROC curve to visualize how the true positive
@@ -408,7 +465,11 @@ You will create a ROC curve and then interpret the results.
 
 **Answer**
 
-# ROC AUC
+```{python}
+
+```
+
+### ROC AUC
 
 The ROC curve you plotted in the last exercise looked promising.
 
@@ -436,7 +497,11 @@ in the console, so you can compare the `roc_auc_score`,
 
 **Answer**
 
-# Hyperparameter tuning with GridSearchCV
+```{python}
+
+```
+
+### Hyperparameter tuning with GridSearchCV
 
 Now you have seen how to perform grid search hyperparameter tuning, you
 are going to build a lasso regression model with optimal hyperparameters
@@ -459,7 +524,11 @@ along with a lasso regression model as `lasso`.
 
 **Answer**
 
-# Hyperparameter tuning with RandomizedSearchCV
+```{python}
+
+```
+
+### Hyperparameter tuning with RandomizedSearchCV
 
 As you saw, `GridSearchCV` can be computationally expensive, especially
 if you are searching over a large hyperparameter space. In this case,
@@ -488,7 +557,13 @@ optimal hyperparameters from these options.
 
 **Answer**
 
-# Creating dummy variables
+```{python}
+
+```
+
+## Preprocessing and Pipelines
+
+### Creating dummy variables
 
 Being able to include categorical features in the model building process
 can enhance performance as they may add information that contributes to
@@ -508,7 +583,11 @@ Now you will create a new DataFrame containing the original columns of
 
 **Answer**
 
-# Regression with categorical features
+```{python}
+
+```
+
+### Regression with categorical features
 
 Now you have created `music_dummies`, containing binary features for
 each song's genre, it's time to build a ridge regression model to
@@ -536,7 +615,11 @@ deviation of the target value—`"popularity"`.
 
 **Answer**
 
-# Dropping missing data
+```{python}
+
+```
+
+### Dropping missing data
 
 Over the next three exercises, you are going to tidy the `music_df`
 dataset. You will create a pipeline to impute missing values and build a
@@ -554,7 +637,11 @@ binary feature.
 
 **Answer**
 
-# Pipeline for song genre prediction: I
+```{python}
+
+```
+
+### Pipeline for song genre prediction: I
 
 Now it's time to build a pipeline. It will contain steps to impute
 missing values using the mean for each feature and build a KNN model for
@@ -575,7 +662,11 @@ and `train_test_split`.
 
 **Answer**
 
-# Pipeline for song genre prediction: II
+```{python}
+
+```
+
+### Pipeline for song genre prediction: II
 
 Having set up the steps of the pipeline in the previous exercise, you
 will now use it on the `music_df` dataset to classify the genre of
@@ -594,7 +685,11 @@ you, and `confusion_matrix` has been imported from `sklearn.metrics`.
 
 **Answer**
 
-# Centering and scaling for regression
+```{python}
+
+```
+
+### Centering and scaling for regression
 
 Now you have seen the benefits of scaling your data, you will use a
 pipeline to preprocess the `music_df` features and build a lasso
@@ -620,7 +715,11 @@ indicates a rock song, and `0` represents other genres.
 
 **Answer**
 
-# Centering and scaling for classification
+```{python}
+
+```
+
+### Centering and scaling for classification
 
 Now you will bring together scaling and model building into a pipeline
 for cross-validation.
@@ -646,7 +745,11 @@ imported for you.
 
 **Answer**
 
-# Visualizing regression model performance
+```{python}
+
+```
+
+### Visualizing regression model performance
 
 Now you have seen how to evaluate multiple models out of the box, you
 will build three regression models to predict a song's `"energy"`
@@ -672,7 +775,11 @@ The following have been imported for you: `LinearRegression`, `Ridge`,
 
 **Answer**
 
-# Predicting on the test set
+```{python}
+
+```
+
+### Predicting on the test set
 
 In the last exercise, linear regression and ridge appeared to produce
 similar results. It would be appropriate to select either of those
@@ -694,7 +801,11 @@ arrays `X_train_scaled`, `X_test_scaled`, `y_train`, and `y_test`.
 
 **Answer**
 
-# Visualizing classification model performance
+```{python}
+
+```
+
+### Visualizing classification model performance
 
 In this exercise, you will be solving a classification problem where the
 `"popularity"` column in the `music_df` dataset has been converted to
@@ -723,7 +834,11 @@ Additionally, `KNeighborsClassifier`, `DecisionTreeClassifier`, and
 
 **Answer**
 
-# Pipeline for predicting song popularity
+```{python}
+
+```
+
+### Pipeline for predicting song popularity
 
 For the final exercise, you will build a pipeline to impute missing
 values, scale features, and perform hyperparameter tuning of a logistic
@@ -744,3 +859,7 @@ preloaded for you.
   score for the grid search object.
 
 **Answer**
+
+```{python}
+
+```
