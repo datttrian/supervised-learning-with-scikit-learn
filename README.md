@@ -4,7 +4,7 @@
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/datttrian/supervised-learning-with-scikit-learn)
 
-This is the repository for the DataCamp course Supervised Learning with scikit-learn. The
+This is a repository for the DataCamp course Supervised Learning with scikit-learn. The
 full course is available from [DataCamp](https://www.datacamp.com/courses/supervised-learning-with-scikit-learn).
 
 ![Clear as Data](http://drive.google.com/uc?export=view&id=1PJVtMhPE_h3g2c9wXm9tf6_pIhvMyDRI)
